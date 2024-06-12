@@ -6,12 +6,73 @@
     <title>Muhammad Habib</title>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #0A0E11;
+            font-family: "Inter", sans-serif;
+        }
+        .photo {
+            max-width: 552px;
+            border-radius: 1rem;
+        }
+        .container-custom {
+            display: flex;
+            flex-direction: row;
+            max-width: 1140px;
+            margin: 0 auto;
+            gap: 2rem;
+            align-items: center;
+            padding: 3rem 0;
+        }
+        .right {
+            color: white;
+        }
+        .title {
+            font-size: 2.5rem;
+        }
+        .title span {
+            color:#FCDD3A;
+        }
+        .position {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .right p {
+            margin-bottom: 1rem;
+        }
+        .btn-group {
+            display: block;
+        }
+        .btn-outline {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            border: 1px solid #FCDD3A;
+            border-radius: .5rem;
+        }
+        .btn-outline:not(:last-child) {
+            margin-right: 1rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="container-custom">
+        <img src="/profile/img/profile.jpg" class="photo" alt="profile">
+        <div class="right">
+            <h2 class="title">Hi, I'm Muhammad <span>Habib</span></h2>
+            <h3 class="position">Software Engineer</h3>
+            <p>I am an accomplished Software Engineer with a robust background in Back-End Services development, specializing in the Go Programming Language, PHP Framework, and NodeJs Framework. With over 3 years of experience, I am dedicated to continuous learning and swiftly adapting to emerging technologies. My proficiency extends to independent project management and collaborative teamwork, consistently delivering successful outcomes.</p>
+            <div class="btn-group">
+                <a href="#" class="btn-outline">About</a>
+                <a href="#" class="btn-outline">Work</a>
+                <a href="#" class="btn-outline">Contact</a>
+            </div>
+        </div>
+    </div>
+
     <div class="h-screen pt-6 overscroll-contain" style="background-color: #0A0E11;">
         <div class="grid grid-cols-2 gap-2 mx-36 my-28">
             <div class="">
-                <img class="rounded-xl object-cover h-96" src="/img/profile.jpg" alt="profile">
+                <img class="rounded-xl object-cover h-96" src="/profile/img/profile.jpg" alt="profile">
             </div>
             <div class="text-white w-100" style="font-family: 'Inter';">
                 <h1 class="text-5xl font-medium pt-8 mx-auto">Hi, I'm Muhammad <span style="color: #FCDD3A;">Habib</span></h1>
